@@ -31,7 +31,7 @@ const morgan = require("morgan");
 }; */
 const mongoDBstore = require("connect-mongodb-session")(session);
 const store = new mongoDBstore({
-  uri: process.env.DB_URL,
+  uri:"mongodb+srv://sowmi846:wUDbvVx8drNGHbGk@cluster0.wbw3n.mongodb.net/e-commerce" ,
   collection: "sessions",
 });
 
